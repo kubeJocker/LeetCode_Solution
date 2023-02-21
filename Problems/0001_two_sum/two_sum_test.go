@@ -1,7 +1,6 @@
 package problem0001
 
 import (
-	. "Leetcode_Solution/Kit"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

@@ -32,3 +32,21 @@ func MakeListNodeList(numss [][]int) []*ListNode {
 
 	return res
 }
+
+func MakeListNodeListWithCycle(nums []int, pos int) *ListNode {
+	head := MakeListNode(nums)
+	if pos == -1 {
+		return head
+	}
+	c := head
+	for pos > 0 {
+		c = c.Next
+		pos--
+	}
+	tail := c
+	for tail.Next != nil {
+		tail = tail.Next
+	}
+	tail.Next = c
+	return head
+}
