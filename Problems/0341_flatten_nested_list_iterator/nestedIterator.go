@@ -1,5 +1,22 @@
 package _341_flatten_nested_list_iterator
 
+type NestedInteger struct {
+}
+
+func (i NestedInteger) GetInteger() int {
+	return 0
+}
+
+func (i NestedInteger) IsInteger() bool {
+	return false
+}
+
+func (i NestedInteger) GetList() []*NestedInteger {
+	return nil
+}
+
+/*********************************************************************************************************************************/
+
 type NestedIterator struct {
 	stack [][]*NestedInteger
 }
