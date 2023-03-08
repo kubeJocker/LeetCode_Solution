@@ -1,5 +1,9 @@
 package _078_subsets
 
+//Given an integer array nums of unique elements, return all possible
+//subsets
+// (the power set).
+
 func subsets_backtrack(nums []int) [][]int {
 	res, track := [][]int{}, []int{}
 	backtrack(nums, 0, &res, track)

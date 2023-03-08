@@ -1,5 +1,8 @@
 package _003_longest_substring_without_repeating_characters
 
+/*
+滑动窗口保存已出现字符的index，当right在window中存在则将left更新到对应index后
+*/
 func lengthOfLongestSubstring(s string) int {
 	left, right, res := 0, 0, 0
 	window := map[byte]int{}

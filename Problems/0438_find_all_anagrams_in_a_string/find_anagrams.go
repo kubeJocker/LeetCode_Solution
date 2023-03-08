@@ -1,5 +1,9 @@
 package _438_find_all_anagrams_in_a_string
 
+/*
+找出s中p的相同字母异序词
+*/
+
 func findAnagrams(s string, p string) []int {
 	window, need := map[byte]int{}, map[byte]int{}
 	for i := range p {

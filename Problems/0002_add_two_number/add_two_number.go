@@ -4,6 +4,10 @@ import (
 	. "Leetcode_Solution/Kit"
 )
 
+/*
+链表相加
+*/
+
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	dummy := &ListNode{}
 	carry, curr := 0, dummy
