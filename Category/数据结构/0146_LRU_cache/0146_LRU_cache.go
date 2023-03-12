@@ -1,5 +1,9 @@
 package _146_LRU_cache
 
+/*
+map来维护节点与key的对应关系，加速查找
+双向链表用来维护节点的使用顺序
+*/
 type LRUCache struct {
 	memo map[int]*Node
 	head *Node // 头尾虚节点
