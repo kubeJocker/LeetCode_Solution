@@ -47,5 +47,4 @@ func main() {
 	go foobar.foo(ctx)
 	go foobar.bar(ctx)
 	<-end
-
 }
